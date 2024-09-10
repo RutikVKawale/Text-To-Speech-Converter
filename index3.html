@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script3.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images\fevicon.png">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>text to speech </title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>welcome to text to speech <span>converter</span>  </h1>
+        <div class="logo">
+            <i class="fa-solid fa-microphone-lines"></i>
+        </div>
+
+        <form action="">
+            <textarea name="text" id="text" cols="90" rows="5" spellcheck="false" placeholder="Write your text here" ></textarea>
+            <div>
+                <div class="inputLabel">
+                    <div class="inputname">Speed</div>
+                    <div id="rateText" class="inputValue">1</div>
+                </div>
+                <input type="range" name="rate" value= 1 id="rate" min="0.5" max="2" step="0.1">
+            </div>
+            <div>
+                <div class="inputLabel">
+                    <div class="inputname">pitch</div>
+                    <div id="pitchText" class="inputValue">1</div>
+                </div>
+                <input type="range" name="pitch" value = 0.7 id="pitch" min="0" max="2" step="0.1">
+            </div>
+            <select name="voiceSelect" id="voiceSelect">
+    
+            </select>
+            <input type="button" value="pause" id="pause">
+            <input type="button" value="convet" id="play">
+
+        </form>
+    </div>
+</body>
+</html>
